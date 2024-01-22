@@ -6,6 +6,12 @@
     <meta name="author" content="Badhon Nath Joy" />
 
     <title>Hockeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
@@ -17,27 +23,76 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              primary: "#FF4240",
             },
           },
         },
       };
     </script>
     <style>
-      .font- {
-        font-family: "";
+      .font-Manrope {
+        font-family: Manrope;
       }
     </style>
   </head>
-  <body>
-    <header>
-
+  <body class="font-Manrope">
+    <header class="container mx-auto px-2 md:px-15 lg:px-20">
+      <nav class="pt-4">
+        <div>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn -mr-6 md:mr-0 btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="font-medium menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a class="text-primary">Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost font-extrabold text-xl md:text-3xl lg:text-4xl"
+                >Hockey<span class="text-primary">’</span>s</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-medium">
+                <li><a class="text-primary">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a href=""><img src="Images/Search.svg" alt="" /></a>
+              <div class="flex items-center">
+                <a class="btn bg-primary text-white ml-2 md:ml-5 lg:ml-5">Get Ticket</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
